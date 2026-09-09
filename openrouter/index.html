@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Router.AI</title>
+    <link rel="shortcut icon" href="../openrouter/assets/orfavicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* main section  */
+        .container {
+            height: 100vh;
+            width: 100%;
+            /* background-color: aqua; */
+        }
+
+        /* header section  */
+        .header_section {
+            height: 70px;
+            width: 100%;
+            background-color: white;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            border-bottom: solid 1px grey;
+        }
+
+        .header_section_1,
+        .header_section_2 {
+            height: 100%;
+            /* background-color: blueviolet; */
+        }
+
+        .header_section_1 {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .header_section_1 i {
+            position: relative;
+            left: 35px;
+            font-size: 15px;
+            color: grey;
+        }
+
+        .header_section_1 input {
+            background: transparent;
+            border-radius: 5px;
+            padding: 5px 20px;
+            text-align: left;
+            margin-left: 10px;
+            color: white;
+            border: solid 1px grey;
+        }
+
+        .header_section_1 input:hover {
+            border: solid 1px #873FF5;
+        }
+
+
+        .header_section_2 {
+            /* background-color: blue; */
+            display: flex;
+        }
+
+        .header_section_2 ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            padding-right: 20px;
+        }
+
+        .header_section_2 ul li {
+            list-style-type: none;
+        }
+
+        .header_section_2 ul li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .header_section_2 ul li a:hover {
+            color: #873FF5;
+        }
+
+        .header_section_2 ul li a button {
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            border: none;
+            background-color: #873FF5;
+        }
+
+        .header_section_2 ul li a button:hover {
+            background-color: blueviolet;
+        }
+
+        /* hero section  */
+        .hero_section {
+            height: 500px;
+            width: 100%;
+            /* background-color: cadetblue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero_section h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 67px;
+            color: black;
+        }
+
+        .hero_section p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 450;
+            line-height: 20px;
+            color: grey;
+        }
+
+        .hero_section p a {
+            color: black;
+        }
+
+        .hero_section .btn_group {
+            height: 150px;
+            width: 350px;
+            /* background-color: brown; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .hero_section .btn_group button {
+            padding: 10px 40px;
+            border-radius: 5px;
+            background-color: white;
+            border: solid 1px grey;
+            color: black;
+            transition: all 0.30s ease;
+        }
+
+        .hero_section .btn_group button:first-child {
+            background-color: #873FF5;
+            color: white;
+            border: none;
+        }
+
+        .hero_section .btn_group button:first-child:hover {
+            background-color: blueviolet;
+        }
+
+        .hero_section .btn_group button:last-child {
+            border: solid 1px grey;
+        }
+
+        .hero_section .btn_group button:last-child:hover {
+            color: #873FF5;
+            background-color: lavender;
+        }
+
+        .hero_section .stat_section {
+            height: 100px;
+            width: 600px;
+            /* background-color: chartreuse; */
+        }
+
+        .hero_section .stat_section ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .hero_section .stat_section ul li {
+            list-style-type: none;
+        }
+
+        .hero_section .stat_section ul li h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: black;
+        }
+
+        .hero_section .stat_section ul li p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: grey;
+        }
+
+        /* card section  */
+        .card_section {
+            height: auto;
+            width: 100%;
+            /* background-color: violet; */
+
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            padding: 20px;
+        }
+
+        .card_section .card_1,
+        .card_2,
+        .card_3,
+        .card_4 {
+            height: 400px;
+            /* background-color: lawngreen; */
+            border: solid 1px grey;
+            border-radius: 10px;
+        }
+
+        .card_1 a img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card_1 a img:hover {
+            transform: scale(1.01);
+        }
+
+        .card_1 h4 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: black;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_1 p a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            color: grey;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_1 h5 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 110px;
+            color: black;
+            position: relative;
+            left: 20px;
+        }
+
+        .card_1 h5 a:hover {
+            color: #873FF5;
+        }
+
+        .card_2 {
+            /* background-color: crimson; */
+        }
+
+        .card_2 a img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card_2 a img:hover {
+            transform: scale(1.01);
+        }
+
+        .card_2 h4 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: black;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_2 p a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            color: grey;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_2 h5 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 110px;
+            color: black;
+            position: relative;
+            left: 20px;
+        }
+
+        .card_2 h5 a:hover {
+            color: #873FF5;
+        }
+
+        .card_3 {
+            /* background-color: yellow; */
+        }
+
+        .card_3 a img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card_3 a img:hover {
+            transform: scale(1.01);
+        }
+
+        .card_3 h4 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: black;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_3 p a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            color: grey;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_3 h5 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 110px;
+            color: black;
+            position: relative;
+            left: 20px;
+        }
+
+        .card_3 h5 a:hover {
+            color: #873FF5;
+        }
+
+        .card_4 {
+            /* background-color: tomato; */
+        }
+
+        .card_4 a img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card_4 a img:hover {
+            transform: scale(1.01);
+        }
+
+        .card_4 h4 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: black;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_4 p a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            color: grey;
+            position: relative;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .card_4 h5 a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 110px;
+            color: black;
+            position: relative;
+            left: 20px;
+        }
+
+        .card_4 h5 a:hover {
+            color: #873FF5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main  -->
+    <main class="container">
+        <!-- header section -->
+        <header class="header_section">
+            <div class="header_section_1">
+                <img src="../openrouter/assets/oricon.svg" width="180px" alt="">
+                <span><i class="fa fa-stack-overflow"></i>
+                    <input type="search" placeholder="search"></span>
+            </div>
+            <div class="header_section_2">
+                <ul>
+                    <li><a href="">Models</a></li>
+                    <li><a href="">Fusion</a></li>
+                    <li><a href="">Chat</a></li>
+                    <li><a href="">Rankings</a></li>
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Docs</a></li>
+                    <li><a href=""><button>SignUp</button></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- hero section  -->
+        <section class="hero_section">
+            <h1>The Unified Interface For LLMs</h1>
+            <p>Better <a href="">prices</a>, better <a href="">uptime</a>, no subscriptions.</p>
+            <div class="btn_group">
+                <button>Get API Key</button>
+                <button>Discover Models</button>
+            </div>
+            <div class="stat_section">
+                <ul>
+                    <li>
+                        <h2>200T+</h2>
+                        <p>Monthly Tokens</p>
+                    </li>
+                    <li>
+                        <h2>10M+</h2>
+                        <p>Global users</p>
+                    </li>
+                    <li>
+                        <h2>70+</h2>
+                        <p>Providers</p>
+                    </li>
+                    <li>
+                        <h2>400+</h2>
+                        <p>Models</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- card section  -->
+        <section class="card_section">
+            <div class="card_1">
+                <a href=""><img src="../openrouter/assets/api1.png" alt=""></a>
+                <h4><a href=""> One API for any Model</a></h4>
+                <p><a href=""> Access all major models through a<br>single,unified interface. OpenAI SDK <br> works out
+                        of the box.</a></p>
+                <h5><a href="">Browse All</a></h5>
+            </div>
+            <div class="card_2">
+                <a href=""><img src="../openrouter/assets/api2.png" alt=""></a>
+                <h4><a href="">Higher Availability</a></h4>
+                <p><a href="">Reliable AI models via our distributed <br> infrastructure. Fall back to other <br>
+                        providers when one goes down.</a></p>
+                <h5><a href="">Learn More ↗</a></h5>
+            </div>
+            <div class="card_3">
+                <a href=""><img src="../openrouter/assets/api3.jpg" alt=""></a>
+                <h4><a href="">Price and Performance</a></h4>
+                <p><a href="">Keep costs in checkout sacificing speed. <br> OpenRouter runs at
+                     the edge of minimal latency between <br> your users and their inference.</a></p>
+                <h5><a href="">Learn More ↗</a></h5>
+            </div>
+            <div class="card_4">
+                <a href=""><img src="../openrouter/assets/api4.jpg" alt=""></a>
+                <h4><a href="">Custom Data Policies</a></h4>
+                <p><a href="">Protect your orgnization with fine grained data policies. <br> 
+                    Ensure prompts only go to the models and providers <br> you trust.</a></p>
+                    <h5><a href="">View Docs ↗</a></h5>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

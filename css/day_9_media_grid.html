@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+
+
+ body{
+    background:#fff;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:70px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    border-bottom:1px solid #eee;
+}
+
+/* Left Menu */
+
+.nav-left{
+    display:flex;
+    gap:45px;
+}
+
+.nav-left a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-left a:hover{
+    color:#777;
+}
+
+/* Logo */
+
+.logo img{
+    width:170px;
+    cursor:pointer;
+}
+
+/* Right Menu */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.nav-right a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:500;
+}
+
+.nav-right i{
+    font-size:21px;
+    color:#5d7288;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-right i:hover{
+    color:#000;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .nav-left{
+        gap:20px;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size:15px;
+    }
+
+    .logo img{
+        width:140px;
+    }
+
+    .nav-right{
+        gap:18px;
+    }
+}
+
+
+.collection{
+    width:100%;
+    padding:60px 0;
+}
+
+/* Heading */
+
+.title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:45px;
+}
+
+.line{
+    width:35%;
+    height:60px;
+    background:#f5f5f5;
+}
+
+.title h1{
+    font-size:55px;
+    letter-spacing:8px;
+    font-weight:700;
+    color:#23364d;
+    white-space:nowrap;
+}
+
+/* Category Buttons */
+
+.category{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.category button{
+    padding:15px 28px;
+    font-size:18px;
+    border:1px solid #cfcfcf;
+    border-radius:14px;
+    background:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.category button:hover{
+    background:#edf2f7;
+}
+
+.category .active{
+    background:#8fa3b3;
+    color:#fff;
+    border:none;
+}
+
+
+
+.products{
+    width:95%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+}
+
+.tag{
+    position:absolute;
+    top:12px;
+    left:12px;
+    background:#fff;
+    padding:6px 12px;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+.content{
+    padding:15px;
+}
+
+.rating{
+    color:#7d8da0;
+    font-size:13px;
+}
+
+.rating span{
+    color:#444;
+}
+
+.content h2{
+    font-size:20px;
+    margin:10px 0;
+    color:#26384b;
+    line-height:30px;
+}
+
+.content p{
+    color:#555;
+    font-size:15px;
+    line-height:24px;
+    height:50px;
+    overflow:hidden;
+}
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:18px;
+}
+
+.bottom h3{
+    font-size:18px;
+}
+
+.bottom button{
+    background:#26384b;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.bottom button:hover{
+    background:#000;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-left">
+        <a href="#">Shop ▼</a>
+        <a href="#">Shop By Concern ▼</a>
+        <a href="#">New Launches</a>
+    </div>
+
+    <div class="logo">
+        <img src="../assets/hypenlogo.gif" alt="Hyphen">
+    </div>
+
+    <div class="nav-right">
+        <a href="#">About Us</a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+</nav>
+<section>
+    <section class="collection">
+
+    <div class="title">
+        <div class="line"></div>
+        <h1>ALL COLLECTION</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="category">
+        <button class="active">All</button>
+        <button>New</button>
+        <button>BestSeller</button>
+        <button>Serum</button>
+        <button>Sunscreen</button>
+        <button>Moisturizer</button>
+        <button>Body Care</button>
+        <button>Lip Balm</button>
+        <button>Cleanser</button>
+        <button>Mask</button>
+    </div>
+    
+    <section class="products">
+
+    <!-- Card 1 -->
+    <div class="card">
+
+        <span class="tag">BestSeller</span>
+
+        <img src="images/product1.jpg" alt="Product">
+
+        <div class="content">
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(2025)</span>
+            </div>
+
+            <h2>Double Shot Radiance Lift Face Serum - 50 Ml</h2>
+
+            <p>
+                18% Brightening Complex + 20% Collagen Boosting...
+            </p>
+
+            <div class="bottom">
+                <h3>Rs. 649</h3>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+
+        <span class="tag">BestSeller</span>
+
+        <img src="images/product2.jpg" alt="Product">
+
+        <div class="content">
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(1218)</span>
+            </div>
+
+            <h2>All I Need Sunscreen SPF 50 PA++++</h2>
+
+            <p>
+                New Gen UV Filters, Certified & In-Vitro Tested...
+            </p>
+
+            <div class="bottom">
+                <h3>Rs. 449</h3>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+
+        <span class="tag">Trending</span>
+
+        <img src="images/product3.jpg" alt="Product">
+
+        <div class="content">
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(338)</span>
+            </div>
+
+            <h2>Dual Phase De-Pigmentation Serum</h2>
+
+            <p>
+                Corrects Pigmentation & Prevents Recurrence...
+            </p>
+
+            <div class="bottom">
+                <h3>Rs. 599</h3>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+</section>
+    
+</body>
+</html>

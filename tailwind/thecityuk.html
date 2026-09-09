@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TheCityUK Clone</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-shape {
+            background:
+                linear-gradient(120deg, rgba(29, 43, 91, 0.95), rgba(84, 17, 54, 0.8)),
+                url("../tailwind/assets/ukflagbgimg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blue-gradient {
+            background: linear-gradient(120deg, #123b70, #151d54);
+        }
+
+        .footer-gradient {
+            background: linear-gradient(135deg, #132c69, #07527c);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-[#20264a]">
+
+<!-- ========================================================= -->
+<!-- NAVBAR -->
+<!-- ========================================================= -->
+
+<header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+
+    <div class="max-w-[1200px] mx-auto px-4">
+
+        <nav class="h-[79px] flex items-center justify-between gap-5">
+
+            <!-- Logo -->
+            <a href="#" class="flex-shrink-0">
+                <div class="text-[#173d73] font-bold text-[20px] tracking-tight">
+                    TheCityUK
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-6 text-[12px] font-medium">
+
+                <a href="#who" class="hover:text-teal-500">
+                    Who we are
+                </a>
+
+                <a href="#work" class="hover:text-teal-500">
+                    Our work
+                </a>
+
+                <a href="#events" class="hover:text-teal-500">
+                    Events
+                </a>
+
+                <a href="#news" class="hover:text-teal-500">
+                    News
+                </a>
+
+                <a href="#" class="hover:text-teal-500">
+                    Members' lounge
+                </a>
+
+                <a href="#" class="hover:text-teal-500">
+                    Get in touch
+                </a>
+
+            </div>
+
+            <!-- Right buttons -->
+            <div class="flex items-center gap-2">
+
+                <a href="#"
+                   class="hidden sm:block bg-[#16c6a3] text-white
+                          px-4 py-3 text-[10px] font-bold
+                          hover:bg-[#10ad91] transition">
+                    BECOME A MEMBER
+                </a>
+
+                <button
+                    class="border border-gray-300 px-4 py-3
+                           text-[10px] font-semibold
+                           hover:bg-gray-100 transition">
+
+                    🔍 SEARCH
+
+                </button>
+
+                <!-- Mobile Menu -->
+                <button
+                    class="lg:hidden border border-gray-300
+                           px-3 py-2 text-lg">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section class="hero-shape min-h-[420px] flex items-center">
+
+    <div class="max-w-[1200px] mx-auto px-6 w-full">
+
+        <div class="max-w-[560px]">
+
+            <p class="text-white text-xl sm:text-2xl md:text-3xl
+                      leading-relaxed font-medium">
+
+                TheCityUK is the industry-led body
+                representing UK-based financial
+                and related professional services.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- WHO WE ARE -->
+<!-- ========================================================= -->
+
+<section id="who" class="py-20 bg-white">
+
+    <div class="max-w-[850px] mx-auto px-6 text-center">
+
+        <h2 class="text-[#143c73] text-3xl font-bold mb-8">
+            Who we are
+        </h2>
+
+        <p class="text-gray-500 text-sm leading-7">
+
+            TheCityUK is the industry-led body representing UK-based
+            financial and related professional services. We are an
+            independent organisation that provides a collective voice
+            for the industry and works to promote the UK's financial
+            and professional services sector.
+
+        </p>
+
+        <a href="#"
+           class="inline-block mt-6 text-[#087e91]
+                  text-sm font-bold underline">
+
+            More about us ›
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- OUR WORK -->
+<!-- ========================================================= -->
+
+<section id="work" class="py-16">
+
+    <div class="max-w-[1200px] mx-auto px-6">
+
+        <h2 class="text-[#143c73] text-3xl font-bold mb-8">
+            Our work
+        </h2>
+
+        <div class="grid md:grid-cols-2">
+
+            <!-- Image -->
+            <div class="h-[330px] overflow-hidden">
+
+                <img
+                    src="../tailwind/assets/thecityukwork.jpg"
+                    alt="Business meeting"
+                    class="w-full h-full object-cover"
+                >
+
+            </div>
+
+            <!-- Text -->
+            <div class="blue-gradient text-white p-8 md:p-12">
+
+                <h3 class="text-2xl font-bold mb-5">
+                    Our work
+                </h3>
+
+                <p class="text-sm leading-7 mb-7">
+
+                    We work to promote and strengthen the UK's
+                    world-leading financial and related professional
+                    services industry.
+
+                </p>
+
+                <a href="#"
+                   class="inline-block border-b border-white
+                          pb-1 text-sm font-bold">
+
+                    Find out more ›
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- LATEST WORK -->
+<!-- ========================================================= -->
+
+<section class="py-16 bg-white">
+
+    <div class="max-w-[1200px] mx-auto px-6">
+
+        <div class="flex justify-between items-center mb-8">
+
+            <h2 class="text-[#143c73] text-2xl font-bold">
+                Our latest work
+            </h2>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- Card 1 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Finance"
+                >
+
+                <div class="pt-5">
+
+                    <h3 class="font-bold text-sm text-[#143c73] mb-3">
+                        Our response to HM Treasury's
+                        Financial Services Growth
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-6">
+                        Read our latest work and insights
+                        from across the financial services sector.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 2 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Business"
+                >
+
+                <div class="pt-5">
+
+                    <h3 class="font-bold text-sm text-[#143c73] mb-3">
+                        Enabling growth across
+                        financial markets
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-6">
+                        Discover our latest reports and
+                        recommendations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 3 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Team"
+                >
+
+                <div class="pt-5">
+
+                    <h3 class="font-bold text-sm text-[#143c73] mb-3">
+                        Priorities for advancing
+                        UK competitiveness
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-6">
+                        Explore our policy priorities and
+                        industry insights.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 4 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Report"
+                >
+
+                <div class="pt-5">
+
+                    <h3 class="font-bold text-sm text-[#143c73] mb-3">
+                        Mansion House and
+                        financial services
+                    </h3>
+
+                    <p class="text-gray-500 text-xs leading-6">
+                        Read our latest publications
+                        and industry updates.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- NEWS -->
+<!-- ========================================================= -->
+
+<section id="news" class="py-20 bg-white">
+
+    <div class="max-w-[1200px] mx-auto px-6">
+
+        <div class="flex justify-between items-center mb-8">
+
+            <h2 class="text-[#143c73] text-3xl font-bold">
+                News
+            </h2>
+
+            <a href="#"
+               class="text-[#087e91] text-sm font-bold">
+                More news ›
+            </a>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-4 gap-6">
+
+            <!-- News 1 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Technology"
+                >
+
+                <div class="pt-4">
+
+                    <span class="text-[10px] text-gray-400">
+                        18 AUGUST 2026
+                    </span>
+
+                    <h3 class="text-sm font-bold
+                               text-[#143c73] mt-2 leading-6">
+
+                        The UK-Switzerland agreement
+                        should unlock new opportunities.
+
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <!-- News 2 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Finance"
+                >
+
+                <div class="pt-4">
+
+                    <span class="text-[10px] text-gray-400">
+                        14 AUGUST 2026
+                    </span>
+
+                    <h3 class="text-sm font-bold
+                               text-[#143c73] mt-2 leading-6">
+
+                        Transitional trade framework
+                        supports financial markets.
+
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <!-- News 3 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Data"
+                >
+
+                <div class="pt-4">
+
+                    <span class="text-[10px] text-gray-400">
+                        12 AUGUST 2026
+                    </span>
+
+                    <h3 class="text-sm font-bold
+                               text-[#143c73] mt-2 leading-6">
+
+                        Building finance for
+                        future growth.
+
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <!-- News 4 -->
+            <article>
+
+                <img
+                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=80"
+                    class="w-full h-[150px] object-cover"
+                    alt="Professional"
+                >
+
+                <div class="pt-4">
+
+                    <span class="text-[10px] text-gray-400">
+                        10 AUGUST 2026
+                    </span>
+
+                    <h3 class="text-sm font-bold
+                               text-[#143c73] mt-2 leading-6">
+
+                        TheCityUK members meet
+                        to discuss future priorities.
+
+                    </h3>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- WHY JOIN US -->
+<!-- ========================================================= -->
+
+<section class="py-16">
+
+    <div class="max-w-[1200px] mx-auto px-6">
+
+        <div class="grid md:grid-cols-2">
+
+            <!-- Image -->
+            <div class="h-[350px]">
+
+                <img
+                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80"
+                    class="w-full h-full object-cover"
+                    alt="Office"
+                >
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="grid sm:grid-cols-2">
+
+                <div class="bg-[#173d73] text-white p-8">
+
+                    <h2 class="text-2xl font-bold mb-5">
+                        Why join us?
+                    </h2>
+
+                    <p class="text-sm leading-7">
+                        Our work is focused on our members'
+                        priorities and supporting the UK's
+                        financial and professional services.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-[#d62074] text-white p-8">
+
+                    <p class="text-sm leading-7">
+
+                        We bring together organisations
+                        and professionals from across the
+                        financial services industry.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- BLUE LINKS / ACCORDION STYLE -->
+<!-- ========================================================= -->
+
+<section class="py-14 bg-white">
+
+    <div class="max-w-[700px] mx-auto px-6">
+
+        <div class="space-y-2">
+
+            <a href="#"
+               class="flex items-center justify-between
+                      bg-[#173d73] text-white
+                      px-6 py-4
+                      hover:bg-[#102e5a] transition">
+
+                <span class="text-sm font-medium">
+                    🌐 UK regions and nations
+                </span>
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#"
+               class="flex items-center justify-between
+                      bg-[#173d73] text-white
+                      px-6 py-4
+                      hover:bg-[#102e5a] transition">
+
+                <span class="text-sm font-medium">
+                    🌍 International
+                </span>
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#"
+               class="flex items-center justify-between
+                      bg-[#173d73] text-white
+                      px-6 py-4
+                      hover:bg-[#102e5a] transition">
+
+                <span class="text-sm font-medium">
+                    ⚖ Trust and reputation
+                </span>
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#"
+               class="flex items-center justify-between
+                      bg-[#173d73] text-white
+                      px-6 py-4
+                      hover:bg-[#102e5a] transition">
+
+                <span class="text-sm font-medium">
+                    📈 Sound and sustainable finance
+                </span>
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#"
+               class="flex items-center justify-between
+                      bg-[#173d73] text-white
+                      px-6 py-4
+                      hover:bg-[#102e5a] transition">
+
+                <span class="text-sm font-medium">
+                    🛡 Defence and resilience
+                </span>
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- NEWSLETTER -->
+<!-- ========================================================= -->
+
+<section class="bg-[#173d73] py-16">
+
+    <div class="max-w-[1100px] mx-auto px-6">
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+            <div>
+
+                <h2 class="text-white text-3xl font-bold mb-4">
+                    Stay in the know
+                </h2>
+
+                <p class="text-white/80 text-sm leading-7">
+                    Sign up to our mailing list to receive
+                    our latest news, reports and events.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <div class="flex">
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        class="flex-1 px-5 py-4
+                               outline-none text-sm"
+                    >
+
+                    <button
+                        class="bg-[#16c6a3]
+                               text-white
+                               px-6 py-4
+                               font-bold text-sm">
+
+                        Sign up
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="footer-gradient text-white py-14">
+
+    <div class="max-w-[1200px] mx-auto px-6">
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+            <!-- Column 1 -->
+            <div>
+
+                <h3 class="font-bold mb-5">
+                    TheCityUK
+                </h3>
+
+                <ul class="space-y-3 text-xs text-white/70">
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Who we are
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Become a member
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Careers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Press office
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hover:text-white">
+                            Get in touch
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Column 2 -->
+            <div>
+
+                <h3 class="font-bold mb-5">
+                    More information
+                </h3>
+
+                <ul class="space-y-3 text-xs text-white/70">
+
+                    <li>Terms and conditions</li>
+                    <li>Privacy policy</li>
+                    <li>Cookie policy</li>
+                    <li>Modern slavery</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Column 3 -->
+            <div>
+
+                <h3 class="font-bold mb-5">
+                    Follow us
+                </h3>
+
+                <div class="flex gap-3">
+
+                    <a href="#"
+                       class="w-9 h-9 rounded-full
+                              bg-white/10
+                              flex items-center justify-center">
+                        in
+                    </a>
+
+                    <a href="#"
+                       class="w-9 h-9 rounded-full
+                              bg-white/10
+                              flex items-center justify-center">
+                        X
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Column 4 -->
+            <div>
+
+                <h3 class="font-bold mb-5">
+                    Stay in the know
+                </h3>
+
+                <p class="text-xs text-white/70 leading-6 mb-4">
+
+                    Sign up to our mailing list to receive
+                    our latest news, reports and events.
+
+                </p>
+
+                <button
+                    class="bg-[#16c6a3]
+                           px-5 py-3
+                           text-xs font-bold">
+
+                    Sign up
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="border-t border-white/20 mt-12 pt-6
+                    flex flex-col md:flex-row
+                    justify-between gap-4">
+
+            <p class="text-[10px] text-white/60">
+                © TheCityUK
+            </p>
+
+            <p class="text-[10px] text-white/60">
+                Company information · Registered office
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

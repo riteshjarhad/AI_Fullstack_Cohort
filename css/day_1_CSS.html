@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal CSS -->
+
+    <style>
+        /* class - . and reused multiple times */
+        /* .heading{
+            property:value
+        } */ 
+
+        .heading{
+            color: violet;
+            background-color: whitesmoke;
+            border: solid purple 4px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Introduction to CSS- to make our website beautiful and attractive</h1>
+    <hr>
+
+    <pre>
+        Everything in a HTML is a Tags and Attributes
+
+        Everything in a CSS is a Property and Values
+
+        3 ways to write CSS-
+
+        Inline CSS- same line- style Attributes
+        e.g. <img src="" alt="" style="height: 300px;">
+
+        Internal CSS- same file- 
+        head tag
+            style tag
+                /* to select html elements- using id,class,tagname */
+                selector{
+                    property:value;
+                    property:value;
+                }
+
+                e.g.
+                div{
+                    height:300px;
+                }
+            style closing tag
+        head closing tag
+    </pre>
+
+    <!-- Inline CSS -->
+
+    <img src="../assets/rrdef.jpg" style="height: 300px" alt="">
+
+    <!-- Internal CSS 
+     Selector/Attributes- id and class
+     id- indicate by # and must be  unique i.e.same like your aadhar num
+     class- indicate by . and reused multiple times i.e.same like your name-->
+
+     <h1 style="color: white;background-color: black;text-align: center;padding: 20px;font-size: 30px;">Welcome to Internal CSS</h1>
+
+     <h1 class="heading" id="heading1" style="">Welcome to Internal CSS</h1>
+
+     <h1 class="heading">Welcome Dear To Our CSS3 Module</h1>
+
+
+
+</body>
+</html>

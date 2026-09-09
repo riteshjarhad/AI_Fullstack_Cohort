@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    min-height:870px;
+    background-color:aqua;
+}
+
+.navbar{
+    width:100%;
+    height:80px;
+    background:#16351A;
+    border:3px solid white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.nav_sec_1{
+    width:50%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:30px;
+}
+
+.nav_sec_1 img{
+    height:50px;
+    width:auto;
+}
+
+.nav_sec_2{
+    width:50%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav_sec_2 ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav_sec_2 li{
+    display:flex;
+    align-items:center;
+}
+
+.section_1{
+    width:100%;
+    height:790px;
+    background:url("../assets/bbg.jpg") no-repeat center/cover;
+    padding-top:80px;
+}
+
+.bg_effect{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.box_1{
+    width:100%;
+    height:200px;
+    background:blueviolet;
+}
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar Start -->
+        <div class="navbar">
+
+            <!-- Logo Section -->
+            <div class="nav_sec_1">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav_sec_2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Amenities</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Hero Section -->
+        <div class="section_1">
+
+            <div class="bg_effect">
+
+                <div class="box_1">
+
+                    <h1>Luxury Living Starts Here</h1>
+                    <p>
+                        Discover premium apartments with world-class
+                        amenities in the heart of the city.
+                    </p>
+
+                    <button>Book a Site Visit</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Hero Section End -->
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ritesh Jarhad | Developer Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        "float": "float 4s ease-in-out infinite",
+                        "pulse-slow": "pulse 3s ease-in-out infinite"
+                    },
+
+                    keyframes: {
+                        float: {
+                            "0%, 100%": {
+                                transform: "translateY(0)"
+                            },
+                            "50%": {
+                                transform: "translateY(-15px)"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body class="bg-[#050816] text-white selection:bg-cyan-500 selection:text-black">
+
+
+    <!-- ================================================= -->
+    <!-- NAVBAR -->
+    <!-- ================================================= -->
+
+    <header class="fixed top-0 left-0 w-full z-50">
+
+        <nav class="max-w-7xl mx-auto px-6 py-5">
+
+            <div
+                class="flex items-center justify-between px-6 py-4 rounded-2xl
+                       bg-white/5 backdrop-blur-xl border border-white/10">
+
+                <!-- Logo -->
+
+                <a href="#home"
+                    class="text-2xl font-bold tracking-wide">
+
+                    Ritesh
+                    <span class="text-cyan-400">.</span>
+
+                </a>
+
+
+                <!-- Desktop Menu -->
+
+                <div class="hidden md:flex items-center gap-8">
+
+                    <a href="#home"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        Home
+                    </a>
+
+                    <a href="#about"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        About
+                    </a>
+
+                    <a href="#skills"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        Skills
+                    </a>
+
+                    <a href="#projects"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        Projects
+                    </a>
+
+                    <a href="#education"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        Education
+                    </a>
+
+                    <a href="#contact"
+                        class="text-gray-300 hover:text-cyan-400 transition">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- Resume -->
+
+                <a href="#"
+                    class="hidden sm:block px-5 py-2.5 rounded-xl
+                           bg-cyan-500 text-black font-semibold
+                           hover:bg-cyan-400 transition">
+
+                    Resume
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================================================= -->
+    <!-- HERO -->
+    <!-- ================================================= -->
+
+    <section id="home"
+        class="min-h-screen relative overflow-hidden flex items-center pt-32">
+
+        <!-- Background Glow -->
+
+        <div
+            class="absolute w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl
+                   top-20 left-10">
+
+        </div>
+
+        <div
+            class="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl
+                   bottom-10 right-10">
+
+        </div>
+
+
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+
+                <!-- LEFT -->
+
+                <div>
+
+                    <div
+                        class="inline-flex items-center gap-3 px-4 py-2
+                               rounded-full bg-white/5 border border-white/10
+                               text-gray-300 mb-7">
+
+                        <span
+                            class="w-2.5 h-2.5 bg-green-400 rounded-full
+                                   animate-pulse">
+                        </span>
+
+                        Available for opportunities
+
+                    </div>
+
+
+                    <p class="text-cyan-400 text-lg font-medium mb-4">
+                        Hello, I'm
+                    </p>
+
+
+                    <h1
+                        class="text-5xl sm:text-6xl lg:text-7xl font-black
+                               leading-tight">
+
+                        Ritesh
+
+                        <span
+                            class="block bg-gradient-to-r from-cyan-400
+                                   via-blue-500 to-purple-500
+                                   bg-clip-text text-transparent">
+
+                            Jarhad
+
+                        </span>
+
+                    </h1>
+
+
+                    <h2
+                        class="text-2xl sm:text-3xl text-gray-300 mt-6">
+
+                        AI Full Stack Web Developer
+
+                    </h2>
+
+
+                    <p
+                        class="text-gray-400 max-w-xl mt-6 text-lg leading-8">
+
+                        I create modern, responsive and user-friendly
+                        websites with clean design and powerful
+                        technologies.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-4 mt-9">
+
+                        <a href="#projects"
+                            class="px-7 py-3.5 rounded-xl
+                                   bg-gradient-to-r from-cyan-500 to-blue-600
+                                   font-semibold
+                                   hover:scale-105 transition">
+
+                            Explore My Work
+
+                        </a>
+
+
+                        <a href="#contact"
+                            class="px-7 py-3.5 rounded-xl
+                                   border border-white/20
+                                   bg-white/5
+                                   hover:bg-white/10
+                                   transition">
+
+                            Let's Talk →
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Stats -->
+
+                    <div class="flex flex-wrap gap-10 mt-12">
+
+                        <div>
+
+                            <h3 class="text-3xl font-bold">
+                                10+
+                            </h3>
+
+                            <p class="text-gray-500 mt-1">
+                                Projects
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-3xl font-bold">
+                                8+
+                            </h3>
+
+                            <p class="text-gray-500 mt-1">
+                                Technologies
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-3xl font-bold">
+                                100%
+                            </h3>
+
+                            <p class="text-gray-500 mt-1">
+                                Passion
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT PROFILE -->
+
+                <div class="flex justify-center lg:justify-end">
+
+                    <div class="relative animate-float">
+
+
+                        <!-- Glow -->
+
+                        <div
+                            class="absolute inset-0 bg-cyan-500/30
+                                   blur-3xl rounded-full scale-75">
+
+                        </div>
+
+
+                        <!-- Image Container -->
+
+                        <div
+                            class="relative w-72 h-72 sm:w-96 sm:h-96
+                                   rounded-full p-1
+                                   bg-gradient-to-br
+                                   from-cyan-400 via-blue-500
+                                   to-purple-600">
+
+                            <div
+                                class="w-full h-full rounded-full
+                                       overflow-hidden
+                                       bg-[#050816]">
+
+                                <!-- Replace this image -->
+
+                                <img
+                                    src="profile.jpg"
+                                    alt="Ritesh Jarhad"
+                                    class="w-full h-full object-cover">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Floating Card -->
+
+                        <div
+                            class="absolute -bottom-5 -left-5
+                                   px-5 py-4 rounded-2xl
+                                   bg-white/10 backdrop-blur-xl
+                                   border border-white/10">
+
+                            <p class="text-sm text-gray-400">
+                                Currently learning
+                            </p>
+
+                            <p class="font-semibold text-cyan-400">
+                                Full Stack + AI
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- ABOUT -->
+    <!-- ================================================= -->
+
+    <section id="about" class="py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+            <div class="text-center mb-16">
+
+                <p class="text-cyan-400 font-medium">
+                    ABOUT ME
+                </p>
+
+                <h2
+                    class="text-4xl sm:text-5xl font-bold mt-3">
+
+                    Turning Ideas Into
+                    <span class="text-cyan-400">
+                        Digital Experiences
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="grid lg:grid-cols-2 gap-10">
+
+
+                <!-- About -->
+
+                <div
+                    class="p-8 sm:p-10 rounded-3xl
+                           bg-white/5 border border-white/10
+                           hover:border-cyan-500/30 transition">
+
+                    <h3 class="text-2xl font-bold mb-6">
+                        Who I Am
+                    </h3>
+
+                    <p
+                        class="text-gray-400 leading-8">
+
+                        I am a B.Sc. Computer Science graduate
+                        passionate about web development and modern
+                        technologies.
+
+                    </p>
+
+                    <p
+                        class="text-gray-400 leading-8 mt-5">
+
+                        Currently, I am developing my skills in
+                        frontend development, Tailwind CSS,
+                        JavaScript, React and full-stack development.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Highlights -->
+
+                <div class="grid sm:grid-cols-2 gap-5">
+
+
+                    <div
+                        class="p-7 rounded-2xl bg-white/5
+                               border border-white/10
+                               hover:border-cyan-400/50
+                               hover:-translate-y-2 transition">
+
+                        <div class="text-3xl mb-4">
+                            💡
+                        </div>
+
+                        <h3 class="font-bold text-xl">
+                            Creative
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            I enjoy creating clean and attractive
+                            user interfaces.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="p-7 rounded-2xl bg-white/5
+                               border border-white/10
+                               hover:border-cyan-400/50
+                               hover:-translate-y-2 transition">
+
+                        <div class="text-3xl mb-4">
+                            ⚡
+                        </div>
+
+                        <h3 class="font-bold text-xl">
+                            Fast Learner
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            I continuously learn new technologies
+                            and improve my skills.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="p-7 rounded-2xl bg-white/5
+                               border border-white/10
+                               hover:border-cyan-400/50
+                               hover:-translate-y-2 transition">
+
+                        <div class="text-3xl mb-4">
+                            📱
+                        </div>
+
+                        <h3 class="font-bold text-xl">
+                            Responsive
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            I build websites that work across
+                            different screen sizes.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="p-7 rounded-2xl bg-white/5
+                               border border-white/10
+                               hover:border-cyan-400/50
+                               hover:-translate-y-2 transition">
+
+                        <div class="text-3xl mb-4">
+                            🎯
+                        </div>
+
+                        <h3 class="font-bold text-xl">
+                            Problem Solver
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            I enjoy solving development problems
+                            and finding better solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- SKILLS -->
+    <!-- ================================================= -->
+
+    <section id="skills"
+        class="py-28 bg-white/[0.02]">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+            <div class="text-center mb-16">
+
+                <p class="text-cyan-400">
+                    MY TOOLKIT
+                </p>
+
+                <h2
+                    class="text-4xl sm:text-5xl font-bold mt-3">
+
+                    Skills & Technologies
+
+                </h2>
+
+            </div>
+
+
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3
+                       lg:grid-cols-4 gap-5">
+
+
+                <!-- Skill -->
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-orange-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🌐
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        HTML5
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Structure & Semantics
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-blue-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🎨
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        CSS3
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Styling & Animation
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-cyan-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        ⚡
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        Tailwind CSS
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Modern UI Development
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-yellow-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🟨
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        JavaScript
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Web Interactions
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-blue-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        ⚛️
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        React
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Frontend Development
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-green-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🟢
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        Node.js
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Backend Development
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-purple-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🗄️
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        Database
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        Data Management
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="group p-7 rounded-2xl
+                           bg-white/5 border border-white/10
+                           hover:border-pink-400
+                           hover:-translate-y-2 transition">
+
+                    <div class="text-4xl mb-5">
+                        🤖
+                    </div>
+
+                    <h3 class="font-bold text-lg">
+                        AI
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mt-2">
+                        AI Technologies
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- PROJECTS -->
+    <!-- ================================================= -->
+
+    <section id="projects" class="py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+            <div class="flex flex-col sm:flex-row
+                        sm:items-end justify-between gap-5 mb-14">
+
+                <div>
+
+                    <p class="text-cyan-400">
+                        FEATURED WORK
+                    </p>
+
+                    <h2
+                        class="text-4xl sm:text-5xl font-bold mt-3">
+
+                        My Projects
+
+                    </h2>
+
+                </div>
+
+                <p class="text-gray-500 max-w-md">
+                    A selection of projects that showcase
+                    my design and development skills.
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+                <!-- PROJECT 1 -->
+
+                <article
+                    class="group rounded-3xl overflow-hidden
+                           bg-white/5 border border-white/10
+                           hover:border-cyan-500/40
+                           transition">
+
+                    <div
+                        class="h-56 bg-gradient-to-br
+                               from-cyan-500/20 to-blue-600/20
+                               flex items-center justify-center">
+
+                        <span
+                            class="text-7xl
+                                   group-hover:scale-110 transition">
+                            🌐
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <span class="text-cyan-400 text-sm">
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Personal Portfolio
+                        </h3>
+
+                        <p class="text-gray-400 mt-4 leading-7">
+                            A modern responsive portfolio website
+                            designed with Tailwind CSS.
+                        </p>
+
+                        <a href="#"
+                            class="inline-block mt-6
+                                   text-cyan-400 font-medium
+                                   hover:text-cyan-300">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article
+                    class="group rounded-3xl overflow-hidden
+                           bg-white/5 border border-white/10
+                           hover:border-purple-500/40
+                           transition">
+
+                    <div
+                        class="h-56 bg-gradient-to-br
+                               from-purple-500/20 to-pink-600/20
+                               flex items-center justify-center">
+
+                        <span
+                            class="text-7xl
+                                   group-hover:scale-110 transition">
+                            🛒
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <span class="text-purple-400 text-sm">
+                            E-COMMERCE
+                        </span>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Shopping Website
+                        </h3>
+
+                        <p class="text-gray-400 mt-4 leading-7">
+                            A clean and responsive e-commerce
+                            interface with modern product cards.
+                        </p>
+
+                        <a href="#"
+                            class="inline-block mt-6
+                                   text-purple-400 font-medium">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article
+                    class="group rounded-3xl overflow-hidden
+                           bg-white/5 border border-white/10
+                           hover:border-blue-500/40
+                           transition">
+
+                    <div
+                        class="h-56 bg-gradient-to-br
+                               from-blue-500/20 to-indigo-600/20
+                               flex items-center justify-center">
+
+                        <span
+                            class="text-7xl
+                                   group-hover:scale-110 transition">
+                            💻
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <span class="text-blue-400 text-sm">
+                            UI DESIGN
+                        </span>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Landing Page
+                        </h3>
+
+                        <p class="text-gray-400 mt-4 leading-7">
+                            A high-converting responsive landing
+                            page built using Tailwind CSS.
+                        </p>
+
+                        <a href="#"
+                            class="inline-block mt-6
+                                   text-blue-400 font-medium">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- EDUCATION -->
+    <!-- ================================================= -->
+
+    <section id="education"
+        class="py-28 bg-white/[0.02]">
+
+        <div class="max-w-5xl mx-auto px-6">
+
+
+            <div class="text-center mb-16">
+
+                <p class="text-cyan-400">
+                    MY JOURNEY
+                </p>
+
+                <h2 class="text-4xl sm:text-5xl font-bold mt-3">
+                    Education
+                </h2>
+
+            </div>
+
+
+            <div class="relative border-l border-cyan-500/40 ml-4">
+
+
+                <!-- Education 1 -->
+
+                <div class="relative pl-10 pb-14">
+
+                    <div
+                        class="absolute -left-2.5 top-0
+                               w-5 h-5 rounded-full
+                               bg-cyan-500
+                               ring-8 ring-[#050816]">
+
+                    </div>
+
+                    <span class="text-cyan-400">
+                        Bachelor's Degree
+                    </span>
+
+                    <h3 class="text-2xl font-bold mt-3">
+                        B.Sc. Computer Science
+                    </h3>
+
+                    <p class="text-gray-400 mt-3">
+                        New Arts, Commerce and Science College,
+                        Ahilyanagar
+                    </p>
+
+                </div>
+
+
+                <!-- Education 2 -->
+
+                <div class="relative pl-10">
+
+                    <div
+                        class="absolute -left-2.5 top-0
+                               w-5 h-5 rounded-full
+                               bg-purple-500
+                               ring-8 ring-[#050816]">
+
+                    </div>
+
+                    <span class="text-purple-400">
+                        Current Learning
+                    </span>
+
+                    <h3 class="text-2xl font-bold mt-3">
+                        AI Full Stack Web Development
+                    </h3>
+
+                    <p class="text-gray-400 mt-3">
+                        Developing skills in modern frontend,
+                        backend and AI technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- CONTACT -->
+    <!-- ================================================= -->
+
+    <section id="contact" class="py-28">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+
+            <div
+                class="rounded-3xl p-8 sm:p-12
+                       bg-gradient-to-br
+                       from-cyan-500/10
+                       via-blue-500/5
+                       to-purple-500/10
+                       border border-white/10">
+
+
+                <div class="grid lg:grid-cols-2 gap-12">
+
+
+                    <!-- Left -->
+
+                    <div>
+
+                        <p class="text-cyan-400">
+                            GET IN TOUCH
+                        </p>
+
+                        <h2
+                            class="text-4xl sm:text-5xl
+                                   font-bold mt-4">
+
+                            Let's build something
+                            <span class="text-cyan-400">
+                                amazing.
+                            </span>
+
+                        </h2>
+
+                        <p
+                            class="text-gray-400 mt-6
+                                   leading-8 max-w-lg">
+
+                            Have a project idea or want to
+                            discuss an opportunity? I'd love
+                            to hear from you.
+
+                        </p>
+
+
+                        <div class="mt-8 space-y-4">
+
+                            <p class="text-gray-300">
+                                📧 your-email@example.com
+                            </p>
+
+                            <p class="text-gray-300">
+                                📍 Maharashtra, India
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Form -->
+
+                    <form class="space-y-5">
+
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            required
+                            class="w-full px-5 py-4
+                                   rounded-xl
+                                   bg-black/30
+                                   border border-white/10
+                                   outline-none
+                                   focus:border-cyan-400
+                                   transition">
+
+
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            required
+                            class="w-full px-5 py-4
+                                   rounded-xl
+                                   bg-black/30
+                                   border border-white/10
+                                   outline-none
+                                   focus:border-cyan-400
+                                   transition">
+
+
+                        <textarea
+                            rows="5"
+                            placeholder="Your Message"
+                            required
+                            class="w-full px-5 py-4
+                                   rounded-xl
+                                   bg-black/30
+                                   border border-white/10
+                                   outline-none
+                                   focus:border-cyan-400
+                                   transition"></textarea>
+
+
+                        <button
+                            type="submit"
+                            class="w-full py-4 rounded-xl
+                                   bg-cyan-500 text-black
+                                   font-bold
+                                   hover:bg-cyan-400
+                                   hover:scale-[1.02]
+                                   transition">
+
+                            Send Message →
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer
+        class="py-8 border-t border-white/10">
+
+        <div
+            class="max-w-7xl mx-auto px-6
+                   flex flex-col sm:flex-row
+                   items-center justify-between gap-4">
+
+            <p class="text-gray-500">
+                © 2026 Ritesh Jarhad. All Rights Reserved.
+            </p>
+
+            <p class="text-gray-600">
+                Built with HTML & Tailwind CSS
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+

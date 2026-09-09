@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            /* background-color: aqua; */
+        }
+
+        .nav_bar {
+            height: 70px;
+            width: 100%;
+            /* background-color: crimson; */
+            display: flex;
+            justify-content: right;
+        }
+
+        .nav_bar_1 {
+            height: 100%;
+            width: 50%;
+            /* background-color: black; */
+        }
+
+        .text_1 {
+            line-height: 2.5;
+            position: relative;
+            left: 70px;
+            top: 5px;
+            color: white;
+        }
+
+        .text_2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+
+        .nav_bar_2 {
+            height: 100%;
+            width: 50%;
+            /* background-color: gold; */
+        }
+
+        .btn_1 {
+            background-color: greenyellow;
+            padding: 5px 10px;
+            position: relative;
+            left: 600px;
+            top: 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding-top: 20px;
+        }
+
+        .section_1 {
+            height: 90px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            position: sticky;
+            top: 0;
+
+
+        }
+
+        .section_11 {
+            height: 100%;
+            width: 33.33%;
+            /* background-color: darkslateblue; */
+            text-align: center;
+        }
+
+        .section_12 {
+            height: 100%;
+            width: 33.33%;
+            /* background-color: burlywood; */
+            text-align: center;
+            word-spacing: 50px;
+        }
+
+        .section_121 li {
+            display: inline-block;
+            line-height: 75px;
+            font-size: 20px;
+        }
+
+        .section_13 {
+            height: 100%;
+            width: 33.33%;
+            /* background-color: yellow; */
+        }
+
+        .btn_2 {
+            height: 40px;
+            width: 40px;
+            color: red;
+            border: 0;
+            background-color: wheat;
+            border-radius: 50%;
+            position: relative;
+            top: 20px;
+            left: 180px;
+        }
+
+        .btn_3 {
+            height: 40px;
+            width: 80px;
+            color: white;
+            border: 0;
+            background-color: red;
+            border-radius: 10px;
+            position: relative;
+            top: 20px;
+            left: 200px;
+        }
+
+        .section_2 {
+            height: 800px;
+            width: 100%;
+            background-color: #004998;
+            display: flex;
+        }
+
+        .section_21 {
+            height: 100%;
+            width: 50%;
+            /* background-color: cadetblue; */
+        }
+
+        .section_22 {
+            height: 100%;
+            width: 50%;
+            /* background-color: darkolivegreen; */
+        }
+
+        .section_22 img:nth-child(2) {
+            width: 60%;
+            position: relative;
+            bottom: 480px;
+            left: 90px;
+            transition: transform 0.5s ease;
+        }
+
+        .section_22 img:nth-child(2):hover {
+            transform: scale(1.08) rotate(-3deg);
+        }
+
+
+        .btn_4 {
+            background-color: red;
+            border: 0px;
+            border-radius: 5px;
+            height: 35px;
+            width: 180px;
+            position: relative;
+            left: 60px;
+            top: 300px;
+        }
+
+        .btn_5 {
+            border: 0px;
+            border-radius: 5px;
+            height: 35px;
+            width: 180px;
+            position: relative;
+            left: 60px;
+            top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <nav class="nav_bar">
+                <div class="nav_bar_1">
+                    <!-- <h2 class="text_1">envato <span class="text_2">market</span></h2> -->
+                    <img src="../assets/elogoimg.svg" alt="" style="position: relative;top: 20px;left: 130px;">
+                </div>
+                <div class="nav_bar_2">
+                    <button class="btn_1">Buy Now</button>
+                </div>
+            </nav>
+
+            <section class="section">
+                <div class="section_1">
+                    <div class="section_11"><img src="../assets/ellogo.png" alt=""></div>
+                    <div class="section_12">
+                        <ul class="section_121">
+                            <li><a href="" style="color: red;">Home</a></li>
+                            <li><a href="" style="color: black;">Courses</a></li>
+                            <li><a href="" style="color: black;">Pages</a></li>
+                            <li><a href="" style="color: black;">Shop</a></li>
+                            <li><a href="" style="color: black;">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="section_13">
+                        <button class="btn_2">🔎︎</button>
+                        <button class="btn_3">Login</button>
+                    </div>
+                </div>
+                <div class="section_2">
+                    <div class="section_21">
+                        <h2 style="position: relative;top: 250px;left: 60px;font-size: 50px;">Empowering <br>Knowledge.
+                            Shaping <br>the Future.</h2>
+                        <p style="position: relative;top: 270px;left: 60px;font-size: 20px;">Advance your Epsilon
+                            journey
+                            through accredited online programs <br>designed by leading
+                            educators. Learn anywhere. Achieve more.</p>
+                        <button class="btn_4"><strong> Apply for Admission</strong></button>
+                        <button class="btn_5"> <strong>Explore Programs</strong></button>
+                    </div>
+                    <div class="section_22">
+
+                        <img style="height: 550px;width: 100%; position: relative;top: 100px;"
+                            src="../assets/eimg1.jpeg" alt="">
+                        <img style="width: 60%; position: relative;bottom: 480px;left: 90px;" src="../assets/eimg2.webp"
+                            alt="">
+                        <img style="position: relative; bottom: 800px; right: 400px;" src="../assets/eimg3.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>   

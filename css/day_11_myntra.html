@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+
+    <link rel="shortcut icon" href="../assets/myntralogo.jpg" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 90px;
+            /* background-color: aqua; */
+        }
+
+        .nav_bar {
+            height: 80px;
+            width: 100%;
+            background-color: white;
+
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 0 20px;
+
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav_bar_logo {
+            height: 100%;
+            width: 5%;
+            /* background-color: black; */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .nav_bar_links {
+            height: 100%;
+            width: 35%;
+            /* background-color: blue; */
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav_bar_input {
+            height: 100%;
+            width: 35%;
+            /* background-color: blueviolet; */
+            display: flex;
+            align-items: center;
+        }
+
+        .nav_bar_input_box {
+            height: 50px;
+            width: 90%;
+            margin-left: 30px;
+        }
+
+        .nav_bar_icon {
+            height: 100%;
+            width: 25%;
+            /* background-color: chocolate; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* ================= PRODUCT PAGE ================= */
+
+.product-page {
+    width: 100%;
+    display: flex;
+
+    padding: 18px 30px;
+
+    gap: 36px;
+}
+
+
+/* ================= LEFT IMAGES ================= */
+
+.product-images {
+    width: 57%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 700px;
+
+    overflow: hidden;
+
+    background-color: #f5f5f5;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================= RIGHT DETAILS ================= */
+
+.product-details {
+    width: 40%;
+
+    padding-right: 15px;
+}
+
+
+/* Brand */
+
+.product-details h1 {
+    font-size: 30px;
+
+    color: #17233f;
+
+    margin-bottom: 5px;
+}
+
+
+/* Product Name */
+
+.product-details h2 {
+    font-size: 24px;
+
+    font-weight: 400;
+
+    color: #777;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= RATING ================= */
+
+.rating {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    padding: 7px 10px;
+
+    font-size: 18px;
+}
+
+.rating-number {
+    font-weight: bold;
+}
+
+.star {
+    color: #008c95;
+
+    margin-left: 5px;
+}
+
+.vertical-line {
+    height: 20px;
+
+    width: 1px;
+
+    background-color: #bbb;
+
+    margin: 0 10px;
+}
+
+.ratings {
+    color: #40506b;
+
+    font-size: 17px;
+}
+
+
+/* ================= LINE ================= */
+
+.product-details hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 15px 0;
+}
+
+
+/* ================= PRICE ================= */
+
+.price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.current-price {
+    font-size: 27px;
+
+    font-weight: bold;
+
+    color: #17233f;
+}
+
+.mrp {
+    font-size: 20px;
+
+    color: #696e79;
+}
+
+.discount {
+    color: #ff7849;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Tax */
+
+.tax {
+    color: #008c45;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-top: 14px;
+}
+
+
+/* ================= SIZE ================= */
+
+.size-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top: 38px;
+
+    margin-bottom: 28px;
+}
+
+.size-heading strong {
+    font-size: 17px;
+
+    color: #111;
+}
+
+.size-heading a {
+    text-decoration: none;
+
+    color: #ff3f6c;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.size-heading i {
+    font-size: 11px;
+}
+
+
+/* Size Buttons */
+
+.sizes {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+}
+
+.size {
+    width: 63px;
+    height: 63px;
+
+    border-radius: 50%;
+
+    border: 1px solid #c8c8c8;
+
+    background-color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #17233f;
+
+    cursor: pointer;
+}
+
+.size:hover {
+    border: 1px solid #ff3f6c;
+}
+
+
+/* Unavailable Size */
+
+.unavailable {
+    color: #bbb;
+
+    position: relative;
+}
+
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+    display: flex;
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* Add To Bag */
+
+.add-bag {
+    height: 68px;
+
+    flex: 1;
+
+    border: none;
+
+    background-color: #ff3f6c;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.add-bag i {
+    margin-right: 15px;
+}
+
+
+/* Wishlist */
+
+.wishlist {
+    height: 68px;
+
+    width: 45%;
+
+    background-color: white;
+
+    border: 1px solid #d4d4d4;
+
+    color: #17233f;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.wishlist i {
+    margin-right: 10px;
+
+    font-size: 21px;
+}
+
+
+/* Hover */
+
+.add-bag:hover {
+    background-color: #e8325b;
+}
+
+.wishlist:hover {
+    border-color: #17233f;
+}
+
+
+/* ================= DELIVERY ================= */
+
+.delivery {
+    border-top: 1px solid #ddd;
+
+    margin-top: 28px;
+
+    padding-top: 38px;
+}
+
+.delivery h3 {
+    font-size: 18px;
+
+    color: #17233f;
+
+    margin-bottom: 25px;
+}
+
+.delivery h3 i {
+    margin-left: 10px;
+
+    font-size: 20px;
+}
+
+
+/* Pincode */
+
+.pincode {
+    width: 315px;
+
+    height: 52px;
+
+    display: flex;
+
+    border: 1px solid #d5d5d5;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.pincode input {
+    width: 70%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 14px;
+
+    font-size: 16px;
+}
+
+.pincode button {
+    width: 30%;
+
+    border: none;
+
+    background-color: white;
+
+    color: #ff3f6c;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Delivery Text */
+
+.delivery p {
+    margin-top: 12px;
+
+    font-size: 15px;
+
+    color: #17233f;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="nav_bar">
+            <div class="nav_bar_logo">
+                <img src="../assets/myntralogo.jpg" alt="">
+            </div>
+            <div class="nav_bar_links">
+                <a href="">MEN</a>
+                <a href="">WOMEN</a>
+                <a href="">KIDS</a>
+                <a href="">HOME</a>
+                <a href="">BEAUTY</a>
+                <a href="">GENZ</a>
+                <a href="">STUDIO<sup><span style="color: red;">NEW</span></sup></a>
+            </div>
+            <div class="nav_bar_input">
+                <input class="nav_bar_input_box" type="text" placeholder="🔎︎ Search for products, brands and more">
+            </div>
+            <div class="nav_bar_icon">
+                <a href="">👤Profile</a>
+                <a href="">❤︎Wishlist</a>
+                <a href="">🛍️Bag</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="product-page">
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="product-images">
+
+            <div class="product-image">
+                <img src="../assets/tshirt1.jpg" alt="Product Front">
+            </div>
+
+            <div class="product-image">
+                <img src="../assets/tshirt2.jpg" alt="Product Back">
+            </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="product-details">
+
+            <!-- Brand -->
+            <h1>Peter England</h1>
+
+            <!-- Product Name -->
+            <h2>Men Polo Collar T-shirt</h2>
+
+
+            <!-- Rating -->
+            <div class="rating">
+
+                <span class="rating-number">4.3</span>
+
+                <span class="star">★</span>
+
+                <span class="vertical-line"></span>
+
+                <span class="ratings">12 Ratings</span>
+
+            </div>
+
+
+            <!-- Horizontal Line -->
+            <hr>
+
+
+            <!-- Price -->
+            <div class="price">
+
+                <span class="current-price">₹783</span>
+
+                <span class="mrp">MRP <del>₹1599</del></span>
+
+                <span class="discount">(51% OFF)</span>
+
+            </div>
+
+
+            <!-- Tax -->
+            <p class="tax">
+                inclusive of all taxes
+            </p>
+
+
+            <!-- Size Heading -->
+            <div class="size-heading">
+
+                <strong>SELECT SIZE</strong>
+
+                <a href="#">SIZE CHART </a>
+
+            </div>
+
+
+            <!-- Sizes -->
+            <div class="sizes">
+
+                <button class="size unavailable">
+                    <del>S</del>
+                </button>
+                <button class="size">M</button>
+
+                <button class="size">L</button>
+
+                <button class="size">XL</button>
+
+                <button class="size">XXL</button>
+            </div>
+            <!-- Buttons -->
+            <div class="action-buttons">
+                <button class="add-bag">
+                    <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                    ADD TO BAG
+                </button>
+                <button class="wishlist">
+                    <!-- <i class="fa-regular fa-heart"></i> -->
+                    WISHLIST
+                </button>
+            </div>
+            <!-- Delivery -->
+            <div class="delivery">
+                <h3>
+                    DELIVERY OPTIONS
+                    <i class="fa-solid fa-truck"></i>
+                </h3>
+                <div class="pincode">
+                    <input type="text" placeholder="Enter pincode">
+                    <button>Check</button>
+                </div>
+                <p>
+                    Please enter PIN code to check delivery time &
+                    Pay on Delivery Availability
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
