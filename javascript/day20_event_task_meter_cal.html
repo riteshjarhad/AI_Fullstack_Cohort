@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meter to Kilometer Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: lightgray;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #result {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Meter to Kilometer</h2>
+
+        <input type="number" id="meter" placeholder="Enter meters">
+
+        <br>
+
+        <button id="btn">Convert</button>
+
+        <p id="result">Result:</p>
+    </div>
+
+    <script>
+        let meter = document.getElementById("meter");
+        let btn = document.getElementById("btn");
+        let result = document.getElementById("result");
+
+        btn.addEventListener("click", function() {
+
+            let m = Number(meter.value);
+
+            if (meter.value === "" || m < 0) {
+                result.innerText = "Please enter valid meters";
+            }
+            else {
+                let km = m / 1000;
+
+                result.innerText = "Kilometers: " + km;
+            }
+
+        });
+    </script>
+
+</body>
+</html>

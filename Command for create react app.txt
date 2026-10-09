@@ -1,0 +1,6 @@
+cd ReactJS
+mkdir day_2_First_Application 
+cd day_2_First_Application 
+npx create-react-app firstapp
+cd firstapp
+npm start

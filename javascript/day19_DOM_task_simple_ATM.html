@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Machine</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .atm {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background: lightblue;
+            border-radius: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="atm">
+        <h2>ATM Machine</h2>
+        <h3 id="balance">Balance: Rs.9000</h3>
+
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <br>
+
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="checkBalance()">Check Balance</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        let balance = 9000;
+
+        function deposit() {
+            let amount = Number(document.getElementById("amount").value);
+
+            if (amount > 0) {
+                balance = balance + amount;
+                document.getElementById("result").innerText = "Deposit successful";
+            } else {
+                document.getElementById("result").innerText = "Enter valid amount";
+            }
+
+            document.getElementById("balance").innerText = "Balance: ₹" + balance;
+        }
+
+        function withdraw() {
+            let amount = Number(document.getElementById("amount").value);
+
+            if (amount <= 0) {
+                document.getElementById("result").innerText = "Enter valid amount";
+            }
+            else if (amount > balance) {
+                document.getElementById("result").innerText = "Insufficient balance";
+            }
+            else {
+                balance = balance - amount;
+                document.getElementById("result").innerText = "Withdrawal successful";
+            }
+
+            document.getElementById("balance").innerText = "Balance:" + balance;
+        }
+
+        function checkBalance() {
+            document.getElementById("result").innerText = "Your balance is" + balance;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: lightgray;
+            margin-top: 50px;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Age Calculator</h2>
+
+        <input type="date" id="dob">
+
+        <br>
+
+        <button id="btn">Calculate Age</button>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        let dob = document.getElementById("dob");
+        let btn = document.getElementById("btn");
+        let result = document.getElementById("result");
+
+        btn.addEventListener("click", function() {
+
+            if (dob.value == "") {
+                result.innerText = "Please select your date of birth";
+                return;
+            }
+
+            let birth = new Date(dob.value + "T00:00:00");
+            let today = new Date();
+
+            let years = today.getFullYear() - birth.getFullYear();
+            let months = today.getMonth() - birth.getMonth();
+            let days = today.getDate() - birth.getDate();
+
+            if (days < 0) {
+                months--;
+                days = days + new Date(
+                    today.getFullYear(),
+                    today.getMonth(),
+                    0
+                ).getDate();
+            }
+
+            if (months < 0) {
+                years--;
+                months = months + 12;
+            }
+
+            if (birth > today) {
+                result.innerText = "Invalid date of birth";
+            }
+            else {
+                result.innerText = years + " Years, " +
+                    months + " Months, " + days + " Days";
+            }
+        });
+    </script>
+
+</body>
+</html>

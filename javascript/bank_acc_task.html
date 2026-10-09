@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let balance=50000;
+        
+        function deposit(amount) 
+        {
+            balance=balance+amount;
+            console.log("Deposit amt", amount);
+            console.log("Current Bal",balance);
+        }
+
+        function withdraw(amount)
+        {
+            balance=balance - amount;
+            console.log("Amount withdraw", amount);
+            console.log("Current Bal",balance);
+        }
+
+        console.log(deposit(1000));
+        console.log()
+    </script>
+</body>
+</html>

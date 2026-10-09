@@ -1,0 +1,13 @@
+GitHub Commands -:
+1.git init
+2.git remote add origin https://github.com/NaralePrathmesh/Eat_Club.git
+3.git add .
+4.git commit -m "initial commit"
+5.git push -u origin master
+
+
+// Commands To Push Updated Code
+6. git status
+7.git add .
+8.git commit -m "Updated project"
+9.git push
