@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 123;
+        // take a num that we want to check
+        let original = num;
+        // make a copy of main num, coz pudhe num chi value change honar ahe
+        let reverse = 0;
+        // 0 was taken at the beginning to form the reverse number
+
+        while (num > 0) {
+            let digit = num % 10;
+            // Using modulo 10 gives the last digit of the number
+            // Example:
+            // 123 % 10 = 3
+            // So, digit = 3
+
+            reverse = reverse * 10 + digit;
+            // This line adds the obtained digit to the reversed number
+            // Example:
+            // Initially, reverse = 0
+            // First iteration: 0 * 10 + 3 = 3
+            // Second iteration: 3 * 10 + 2 = 32
+            // Third iteration: 32 * 10 + 1 = 321
+            // In this way, the reversed number 321 is formed from 123
+
+            num = (num - digit) / 10;
+            // This line removes the last digit from `num`
+            // Example:
+            // 123 → 12
+            // 12 → 1
+            // 1 → 0
+            // The loop stops when `num` becomes 0
+
+        }
+
+        if (original == reverse) {
+            console.log("Palindrome Number");
+            // If both numbers are the same, a palindrome number will be printed
+        } else {
+            console.log("Not a Palindrome Number");
+            // If the two numbers are different, "Not a Palindrome Number" will be printed.
+        }
+    </script>
+</body>
+
+</html>
