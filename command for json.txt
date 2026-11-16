@@ -1,0 +1,8 @@
+after creating file using vite app then next commands for json,
+cd myapp
+mkdir json_data
+cd json_data
+npm i -g json-server@0
+npx json-server --watch db.json
+http://localhost:3000
+http://localhost:3000/students

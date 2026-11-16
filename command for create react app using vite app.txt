@@ -1,0 +1,9 @@
+cd AI_Fullstack_Cohort
+cd React_JS
+mkdir React_day_16 
+cd React_day_16 
+npm create vite@latest myapp
+framework-react
+variant-javascript
+linter-ESlint
+http://localhost:5173/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- JS Array methods to iterate Array and Object -->
+
+    <script>
+        // most widely useed method to for iterating
+        // Map= used to iterate array object
+        // it returns new array
+        // and its chainable i.e we can use other array methods inside map like filter find sort....
+
+        // syntax-
+
+        const data = [
+            {
+                id: 1,
+                name: "Pratik",
+                addres: "Pune"
+
+            },
+            {
+                id: 2,
+                name: "Rushikesh",
+                addres: "Nashik"
+            }
+        ]
+
+
+        // 1 argument must other are optional
+        const result=data.map((val,index,array) => {
+
+            console.log(val)
+            console.log(index)
+            console.log(array)
+
+            return val;
+
+        })
+
+        console.log(result)
+
+
+
+        // forEach-
+        // used to iterate array object
+        // but it return nothing i.e undefined
+        // its not chainable- we cannot used other array methods
+
+         // 1 argument must other are optional
+        const result2=data.forEach((val,index,array) => {
+
+            console.log(val)
+            console.log(index)
+            console.log(array)
+
+            return val;
+
+        })
+
+        console.log(result2)
+    </script>
+
+</body>
+
+</html>

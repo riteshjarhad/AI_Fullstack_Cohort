@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "age": 20,
+      "course": "BCA",
+      "city": "Pune",
+      "marks": 85
+    },
+    {
+      "id": 2,
+      "name": "Priya Patil",
+      "age": 21,
+      "course": "BSc CS",
+      "city": "Mumbai",
+      "marks": 90
+    },
+    {
+      "id": 3,
+      "name": "Amit Verma",
+      "age": 19,
+      "course": "BCA",
+      "city": "Nashik",
+      "marks": 75
+    },
+    {
+      "id": 4,
+      "name": "Sneha Jadhav",
+      "age": 20,
+      "course": "BSc IT",
+      "city": "Ahilyanagar",
+      "marks": 88
+    },
+    {
+      "id": 5,
+      "name": "Rohan Deshmukh",
+      "age": 22,
+      "course": "MCA",
+      "city": "Pune",
+      "marks": 92
+    }
+  ]
+}
